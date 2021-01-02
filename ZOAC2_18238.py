@@ -7,7 +7,7 @@ p = ord("A")
 
 for i in range(len(text)):
     n = ord(text[i])
-    if abs(n - p) < 26 - abs(n-p):
+    if abs(n - p) <= 13:
         total += abs(n-p)
     else:
         total += 26-abs(n-p)

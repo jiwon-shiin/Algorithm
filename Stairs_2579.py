@@ -1,9 +1,9 @@
 # 백준 2579
 
 def stairs(S):
-    DP = [0]*len(S)
     if len(S) == 2: return S[1]
     if len(S) == 3: return S[1]+S[2]
+    DP = [0]*len(S)
     DP[1] = S[1]
     DP[2] = S[2]+S[1]
     for i in range(3,len(S)):
