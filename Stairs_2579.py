@@ -2,7 +2,6 @@
 
 def stairs(S):
     DP = [0]*len(S)
-    if len(S) == 1: return 
     if len(S) == 2: return S[1]
     if len(S) == 3: return S[1]+S[2]
     DP[1] = S[1]
