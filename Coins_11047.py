@@ -7,8 +7,9 @@ for i in range(N):
 
 total = 0
 for i in range(N-1,-1,-1):
-    total += K//money[i]
-    K -= (K//money[i])*money[i]
-    if K==0:
+    coins = K//money[i]
+    total += coins
+    K -= coins*money[i]
+    if K == 0:
         break
 print(total)
