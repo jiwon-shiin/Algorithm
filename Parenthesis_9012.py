@@ -1,4 +1,4 @@
-# 백준 9012
+# 백준 9012 신지원
 
 def isVPS(text):
     stack = []
